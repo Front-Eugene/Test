@@ -78,7 +78,7 @@ function handleAnswer() {
         contactForm.classList.add('form-show');
         quizWrap.classList.add('quiz-hide');
         openBtn.classList.add('quiz-hide');
-        send(); 
+        // send();
     }
 }
 // Обработка кнопки "Next"
