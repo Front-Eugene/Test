@@ -19,6 +19,7 @@
     letter-spacing: 2px;
     background: #ffcf30;
     animation: pulse 2s infinite;
+    z-index: 999;
 }
 
 @keyframes pulse {
@@ -308,6 +309,89 @@ footer a {
     color: #fff;
 }
 
+.quiz {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    align-items: center;
+    justify-content: space-around;
+    background: url(../img/quiz-bg.avif) center center/cover no-repeat;
+    z-index: 200;
+}
+
+.quiz-show {
+    display: flex;
+}
+
+.quiz-wrap {
+    width: 50%;
+    padding: 50px;
+    border-radius: 20px;
+    background: #fff;
+}
+
+.quiz-wrap h1 {
+    margin: 0 0 20px 0;
+    text-align: center;
+}
+
+.question {
+    font-size: 30px;
+    margin: 20px 0;
+}
+
+.choices label{
+    font-size: 25px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+input {
+    cursor: pointer;
+}
+
+.next-button {
+    display: block;
+    min-width: 200px;
+    height: 50px;
+    margin: 20px auto;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 900;
+    cursor: pointer;
+    border: none;
+    border-radius: 25px;
+    background: #ffcf30;
+}
+
+.tg-form {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 20px;
+    background: #fff;
+    display: none;
+}
+
+.form__input {
+    width: 300px;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.form-show {
+    display: flex;
+}
+
+.quiz-hide {
+    display: none;
+}
+
 @media screen and (min-width: 100px) and (max-width: 800px) {
     body {
         width: 100vw;
@@ -422,5 +506,18 @@ footer a {
         margin: 20px 0;
         font-size: 25px;
         text-align: center;
+    }
+
+    .quiz-wrap {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .question {
+        font-size: 20px;
+    }
+
+    .choices label {
+        font-size: 15px;
     }
 }
