@@ -118,6 +118,7 @@ function send() {
     .then(function(res) {
         currentForm.name.value = '';
         currentForm.phone.value = '';
+        window.location.href = 'https://front-eugene.github.io/test/';
     })
     
     .catch(function(error) {
